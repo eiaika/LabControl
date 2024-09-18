@@ -1,0 +1,27 @@
+{
+    "modelID": "mqtt_argv.py",
+    "mqttTopic": "hp1",
+
+    "controlData":{
+        "Kp_pid" :1.534,
+        "Ki_pid" :0.08,
+        "Kd_pid" :-0.35,
+        "setpoint_pid" : 20
+    },
+    "objData":{
+        "Kp_AP2": 0.72,
+    	"T1_AP2": 3,
+    	"T2_AP2": 25,
+    	"delayTime_AP2": 4,
+        "discTime_AP2" :0.01,
+        "output_AP1" :0,
+        "Kp_AP1" :-12,
+        "T_AP1" :8,
+        "delayTime_AP1" :0.01,
+        "discTime_AP1"  :0.01
+    },
+    "initialStateData":{
+        "procVal" : 0
+    } 
+    
+}

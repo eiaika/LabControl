@@ -1,0 +1,22 @@
+{
+    "mqttConfig":{
+        "host": "217.182.78.89",
+        "port": 1885,
+        "topicCMD":"Computation/Control",
+        "username":"user1",
+        "password":"",
+        "caFile":"./keys/ca.crt",
+        "keyFile":"./keys/pythonscript.key",
+        "certFile":"./keys/pythonscript.crt",
+        "sequre": false
+    },
+    "controller":{
+        "id": "ksajdejj111"
+        
+    },
+    "pythonCode":{
+        "pyResultsTopic":"Computation/Results",
+        "pyDataTopic": "Computation/Data"
+    }
+    
+}

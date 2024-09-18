@@ -1,0 +1,27 @@
+{
+    "modelID": "mqtt_argv_apap.py",
+    "mqttTopic": "hp4",
+
+    "controlData":{
+        "Kp_pid" :1.534,
+        "Ki_pid" :0.08,
+        "Kd_pid" :-0.35,
+        "setpoint_pid" : 20
+    },
+    "objData":{
+        "Kp_AP2": 0.007,
+    	"T1_AP2": 6,
+    	"T2_AP2": 0,
+    	"delayTime_AP2": 2,
+        "discTime_AP2" :0.01,
+        "output_AP1" :0,
+        "Kp_AP1": -0.18,
+    	"T_AP1": 3,
+        "delayTime_AP1" :0.01,
+        "discTime_AP1"  :0.01
+    },
+    "initialStateData":{
+        "procVal" : 7
+    } 
+    
+}
