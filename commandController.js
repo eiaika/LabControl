@@ -114,6 +114,7 @@ process.on('exit', cleanExit);*/
     });
     model.on('close', (code) => {
       console.log(`child process ${model.pid} exited with code ${code}`);
+      global.childArray = global.childArray.filter(item => item.pid !== model.pid);
     });
     model.stderr.on('data', (data) => {
       console.error(`stderr: ${data}`);
@@ -218,8 +219,8 @@ process.on('exit', cleanExit);*/
   
   
     } catch (error) {
-      console.log(err.message);
-      logger.push([Date.now(), err.message]);
+      console.log(error.message);
+      logger.push([Date.now(), error.message]);
       result = -1;
     }
     
